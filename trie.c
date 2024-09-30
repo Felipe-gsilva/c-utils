@@ -52,7 +52,6 @@ bool search(trie_node *T, trie_node *x, int w) {
 }
 
 int count(trie_node *node){
-    
     return 0;
 }
 
@@ -61,14 +60,11 @@ bool insert(trie_node *root, char key){
         printf("max size reached");
         return false;
     }
-
     return false;
 }
 
 int main() {
     trie_node *root = create_tree();
-    
-
 
     trie_node *search_node = alloc_node();
     search_node->key = 'a'; 

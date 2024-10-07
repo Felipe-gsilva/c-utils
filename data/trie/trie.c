@@ -44,10 +44,9 @@ trie_node *new_node(char key) {
 
 bool search(trie_node *T, trie_node *x) {
     if (!T) return false;
-
     trie_node *u = T;
     for (int i = 0; i < w - 1; i++) {
-        int c = ((x->key - '0') >> ((w - 1) - i)) & 1;
+        int c = (x->key  >> ((w - 1) - i)) & 1;
         if (u->child[c] == NULL)
             return false;
         if (u->key != x->key)
@@ -76,7 +75,7 @@ bool insert(trie_node *T, trie_node *x) {
     trie_node *u = T;
     int c;
     for (int i = 0; i < w - 1; i++) {
-        c = ((x->key - '0') >> ((w - 1) - i)) & 1;
+        c = (x->key >> ((w - 1) - i)) & 1;
         if (u->child[c] == NULL)
             break;
         if (u->key == x->key) {

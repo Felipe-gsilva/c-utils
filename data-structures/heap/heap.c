@@ -5,12 +5,6 @@ int lchild(int i) { return 2 * i + 1; }
 int rchild(int i) { return (2 * i) + 2; }
 int root(heap A) { return A.arr[0]; }
 
-void swap(int a, int b) {
-  a = a ^ b;
-  b = a ^ b;
-  a = a ^ b;
-}
-
 void max_heapify(heap *A, int n) {
   A->n = A->length;
   for (int i = n / 2; i > 0; i--)

@@ -1,7 +1,4 @@
 #include "bucket.h"
-#include "stdlib.h"
-#include "stdio.h"
-#include "string.h"
 
 
 void bucket_sort(int *arr, int n) {
@@ -16,6 +13,8 @@ void bucket_sort(int *arr, int n) {
 //	return as listas encadeadas
     int b[n-1];
     memset(b, 0, sizeof(int) * n-1);
+
+
 
 
 }

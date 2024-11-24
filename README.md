@@ -1,3 +1,3 @@
 # data structures and algorithms 
 
-This repo receive all data structures and some algorithms and impl for all of them
+some data structures and algorithms and impl in C for later usage.

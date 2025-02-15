@@ -1,7 +1,7 @@
-#include <stdio.h>
-
 #ifndef _define_
 #define _define_
-#else
+
+#include <stdio.h>
+
 
 #endif

@@ -1,8 +1,6 @@
-#include <stdio.h>
-
-#ifdef _queue_
+#ifndef _queue_
 #define _queue_
-#else
+
 typedef struct queue{
   char c;
   int freq;

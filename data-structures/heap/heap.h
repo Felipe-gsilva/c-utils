@@ -1,9 +1,9 @@
 #ifndef _HEAP
 #define _HEAP
 
+#include "../../utils/usual_fns.h"
 #include "stdio.h"
 #include "stdlib.h"
-#include "../../utils/usual_fns.h"
 
 typedef struct heap heap;
 
